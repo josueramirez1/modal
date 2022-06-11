@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(195, 181, 181);
+}
+
+.modal {
+  height: 80vh;
+  width: 900px;
+  max-width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #777;
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0.5rem;
+  border-top: 1px solid #777;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  padding-top: 0.5rem;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.footer .btn {
+  margin-right: 0.5rem;
+}
+
+.footer .btn:last-child {
+  margin-right: initial;
+}
+
+.btn {
+  padding: 0.5rem;
+  font-size: inherit;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #1ca;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #0a8;
+}
+
+.btn.btn-danger {
+  background-color: #c33;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+  background-color: #a11;
+}
